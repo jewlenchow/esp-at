@@ -31,7 +31,7 @@
  *******************************************************/
 #define AT_UART_BAUD_RATE_MAX                       SOC_UART_BITRATE_MAX    /**< maximum uart baud rate */
 #define AT_UART_BAUD_RATE_MIN                       80                      /**< minimum uart baud rate */
-#define AT_UART_BAUD_RATE_DEF                       115200                  /**< default uart baud rate */
+#define AT_UART_BAUD_RATE_DEF                       961200                  /**< default uart baud rate */
 #define AT_UART_PATTERN_TIMEOUT_MS                  20                      /**< uart pattern timeout */
 
 #define AT_UART_PARITY_NONE                         UART_PARITY_DISABLE     /**< uart parity disable */
@@ -83,8 +83,8 @@
 #ifdef CONFIG_ESPTOOLPY_FLASHSIZE_2MB
 #define CONFIG_AT_UART_PORT_TX_PIN_DEFAULT          7
 #define CONFIG_AT_UART_PORT_RX_PIN_DEFAULT          6
-#define CONFIG_AT_UART_PORT_CTS_PIN_DEFAULT         19
-#define CONFIG_AT_UART_PORT_RTS_PIN_DEFAULT         20
+#define CONFIG_AT_UART_PORT_CTS_PIN_DEFAULT         5
+#define CONFIG_AT_UART_PORT_RTS_PIN_DEFAULT         4
 #else
 #define CONFIG_AT_UART_PORT_TX_PIN_DEFAULT          7
 #define CONFIG_AT_UART_PORT_RX_PIN_DEFAULT          6
